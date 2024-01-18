@@ -1,0 +1,126 @@
+
+
+import socket
+import subprocess
+import sys
+from datetime import datetime
+
+subprocess.call('clear', shell=True)
+
+host = input("Enter a remote host: ")
+hostIp = socket.gethostbyname(host)
+
+
+import socket
+import subprocess
+import sys
+from datetime import datetime
+
+subprocess.call('clear', shell=True)
+
+host = input("Enter a remote host: ")
+hostIp = socket.gethostbyname(host)
+
+print ("_" * 60)
+print ("please wait, scanning remote host", hostIp)
+
+t1 = datetime.now()
+
+try:
+    for port in range (79, 80):
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        result = sock.connect_ex((hostIp, port))
+        if result == 0:
+            print ("Port {} is open".format(port))
+        sock.close()
+
+except KeyboardInterrupt:
+    print("CTRL+C pressed")
+    sys.exit()
+
+except socket.gaierror:
+    print("Hostname could not be resolved")
+    sys.exit()
+
+except socket.error:
+    print("Hostname could not be connected to the server")
+    sys.exit()
+
+t2 = datetime.now()
+
+totalTime = t2 - t1
+
+print ("total time in seconds is", totalTime)
+
+print ("_" * 60)
+print ("please wait, scanning remote host", hostIp)
+
+t1 = datetime.now()
+
+try:
+    for port in range (79, 80)
+
+import socket
+import subprocess
+import sys
+from datetime import datetime
+
+subprocess.call('clear', shell=True)
+
+host = input("Enter a remote host: ")
+hostIp = socket.gethostbyname(host)
+
+print ("_" * 60)
+print ("please wait, scanning remote host", hostIp)
+
+t1 = datetime.now()
+
+try:
+    for port in range (79, 80):
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        result = sock.connect_ex((hostIp, port))
+        if result == 0:
+            print ("Port {} is open".format(port))
+        sock.close()
+
+except KeyboardInterrupt:
+    print("CTRL+C pressed")
+    sys.exit()
+
+except socket.gaierror:
+    print("Hostname could not be resolved")
+    sys.exit()
+
+except socket.error:
+    print("Hostname could not be connected to the server")
+    sys.exit()
+
+t2 = datetime.now()
+
+totalTime = t2 - t1
+
+print ("total time in seconds is", totalTime)
+:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        result = sock.connect_ex((hostIp, port))
+        if result == 0:
+            print ("Port {} is open".format(port))
+        sock.close()
+
+except KeyboardInterrupt:
+    print("CTRL+C pressed")
+    sys.exit()
+
+except socket.gaierror:
+    print("Hostname could not be resolved")
+    sys.exit()
+
+except socket.error:
+    print("Hostname could not be connected to the server")
+    sys.exit()
+
+t2 = datetime.now()
+
+totalTime = t2 - t1
+
+print ("total time in seconds is", totalTime)
